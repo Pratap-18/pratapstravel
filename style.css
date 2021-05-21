@@ -8,12 +8,8 @@ body {
 }
 .background {
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.7)
-    ),
+  height: 150vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
     url("./images/city.jpg");
 
   align-items: center;
@@ -80,7 +76,7 @@ body {
 .learn-btn:hover {
   border: 1px solid rgb(231, 123, 35);
   background-color: transparent;
-  color: rgb(231, 123, 35);o
+  color: rgb(231, 123, 35);
 }
 .navbar-light .navbar-nav .nav-link:hover {
   color: rgb(231, 123, 35);
@@ -110,52 +106,67 @@ body {
 
   transition: 5s;
 }
-.card:hover{
-  background:rgba(197, 197, 197, 0.5);
+.card:hover {
+  background: rgba(197, 197, 197, 0.5);
   z-index: 888;
-transition: 2s;
-cursor: pointer;
+  transition: 2s;
+  cursor: pointer;
 }
-form{
+form {
   color: #fff;
 }
-p{
+p {
   font-size: 13px;
 }
-footer{
+footer {
   background: rgb(32, 32, 32);
   color: #fff;
   padding: 30px;
   width: 100%;
-
-
 }
-footer ul{
+footer ul {
   list-style: none;
 }
-footer ul li{
+footer ul li {
   padding: 10px;
   font-size: 13px;
 }
-footer ul li:hover{
+footer ul li:hover {
   padding: 10px;
   font-size: 13px;
   color: rgb(235, 103, 103);
 }
-.quick-list h3{
+.quick-list h3 {
   font-size: 16px;
-  
 }
-.ads{
+.ads {
   width: 100%;
-  background: #ECECEC;
+  background: #ececec;
   padding: 50px;
 }
-.ads img{
+.ads img {
   width: 100%;
 }
-.slid-backdrop{
+.slid-backdrop {
   background: rgb(31, 31, 31);
   color: #fff;
   padding: 50px;
+}
+@media screen and (max-width: 600px) {
+  .abt-body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  .main-land {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+  }
+  .main-land .heading {
+    text-align: center;
+  }
 }
